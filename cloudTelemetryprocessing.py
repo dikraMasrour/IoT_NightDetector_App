@@ -39,7 +39,7 @@ def handle_telemetry(client, userdata, telemetry):
         # save to csv
         writer.writerow(payload)
 
-    on_command = json.dumps({'led' : 'on', 'brightness' : 123, 'blinkFreq' : 123})
+    on_command = json.dumps({'led' : 'on'})
     off_command = json.dumps({'led' : 'off'})
 
     th = 500
